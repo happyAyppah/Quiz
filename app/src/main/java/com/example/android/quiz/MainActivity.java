@@ -106,9 +106,9 @@ public class MainActivity extends AppCompatActivity {
         }else{
             score += 0;
         }
-        
 
-        if(answer.getText().toString() == "Google" || answer.getText().toString() == "google" || answer.getText().toString() == "GOOGLE"){
+
+        if(answer.getText().toString().equals("Google") || answer.getText().toString().equals("google") || answer.getText().toString().equals("GOOGLE")){
             score += 1;
         }else{
             score += 0;
