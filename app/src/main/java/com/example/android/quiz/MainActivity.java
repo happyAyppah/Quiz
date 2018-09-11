@@ -26,33 +26,31 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        userScore = (TextView)findViewById(R.id.user_score);
-
-        // Radiobuttons
-
-        q1 = (RadioButton)findViewById(R.id.correct1) ;
-        q2 = (RadioButton)findViewById(R.id.correct2);
-        q3 = (RadioButton)findViewById(R.id.correct3);
-        q4 = (RadioButton)findViewById(R.id.correct4);
-        q5 = (RadioButton)findViewById(R.id.correct5);
-        q6 = (RadioButton)findViewById(R.id.correct6);
-        q7 = (RadioButton)findViewById(R.id.correct7);
-        q8 = (RadioButton)findViewById(R.id.correct8);
-        q9 = (RadioButton)findViewById(R.id.correct9);
-        q10 = (RadioButton)findViewById(R.id.correct10);
+        q1 = findViewById(R.id.correct1) ;
+        q2 = findViewById(R.id.correct2);
+        q3 = findViewById(R.id.correct3);
+        q4 = findViewById(R.id.correct4);
+        q5 = findViewById(R.id.correct5);
+        q6 = findViewById(R.id.correct6);
+        q7 = findViewById(R.id.correct7);
+        q8 = findViewById(R.id.correct8);
+        q9 = findViewById(R.id.correct9);
+        q10 = findViewById(R.id.correct10);
 
 
         //  Check Box
-        a = (CheckBox)findViewById(R.id.correct11_a);
-        b = (CheckBox)findViewById(R.id.correct11_b);
-        c = (CheckBox)findViewById(R.id.correct11_c);
-        d = (CheckBox)findViewById(R.id.correct11_d);
+        a = findViewById(R.id.correct11_a);
+        b = findViewById(R.id.correct11_b);
+        c = findViewById(R.id.correct11_c);
+        d = findViewById(R.id.correct11_d);
 
         // EditText
-        answer = (EditText)findViewById(R.id.correct12);
+        answer = findViewById(R.id.correct12);
 
     }
 
@@ -116,15 +114,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Toast.makeText(this, "You Scored: "+score, Toast.LENGTH_SHORT).show();
- //       userScore.setText(scorecard());
 
     }
-
-//    public String scorecard(){
-//        String message;
-//        message = " Your Score: "+score;
-//        return message;
-//    }
 
 }
 
